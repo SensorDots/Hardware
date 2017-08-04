@@ -117,12 +117,12 @@
 <pin name="GND1" x="-15.24" y="5.08" length="middle" direction="pas"/>
 <pin name="SDA1" x="-15.24" y="2.54" length="middle"/>
 <pin name="SCL1" x="-15.24" y="0" length="middle"/>
-<pin name="ADDR1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="AS_I" x="-15.24" y="-2.54" length="middle"/>
 <pin name="MST" x="-15.24" y="-5.08" length="middle"/>
-<pin name="NC1" x="-15.24" y="-7.62" length="middle" direction="nc"/>
-<pin name="NC2" x="15.24" y="-7.62" length="middle" direction="nc" rot="R180"/>
-<pin name="SYNC" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="ADDR2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="RST" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="POUT" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="AS_O" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="SCL2" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="SDA2" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="GND2" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
@@ -137,18 +137,18 @@
 <devices>
 <device name="" package="MAPPYDOT">
 <connects>
-<connect gate="G$1" pin="ADDR1" pad="5"/>
-<connect gate="G$1" pin="ADDR2" pad="10"/>
+<connect gate="G$1" pin="AS_I" pad="5"/>
+<connect gate="G$1" pin="AS_O" pad="10"/>
+<connect gate="G$1" pin="GND" pad="8"/>
 <connect gate="G$1" pin="GND1" pad="2"/>
 <connect gate="G$1" pin="GND2" pad="13"/>
 <connect gate="G$1" pin="MST" pad="6"/>
-<connect gate="G$1" pin="NC1" pad="7"/>
-<connect gate="G$1" pin="NC2" pad="8"/>
+<connect gate="G$1" pin="POUT" pad="9"/>
+<connect gate="G$1" pin="RST" pad="7"/>
 <connect gate="G$1" pin="SCL1" pad="4"/>
 <connect gate="G$1" pin="SCL2" pad="11"/>
 <connect gate="G$1" pin="SDA1" pad="3"/>
 <connect gate="G$1" pin="SDA2" pad="12"/>
-<connect gate="G$1" pin="SYNC" pad="9"/>
 <connect gate="G$1" pin="VCC1" pad="1"/>
 <connect gate="G$1" pin="VCC2" pad="14"/>
 </connects>
